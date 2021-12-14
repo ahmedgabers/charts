@@ -2,11 +2,5 @@ guestbook:
   replicaCount: 1
 
   service:
-<<<<<<< HEAD
     type: LoadBalancer
     port: 80
-=======
-    type: NodePort
-    nodePort: 32003
-    port: 80
->>>>>>> 34012fe53823e92f34e35d461da9ae9848a07089
