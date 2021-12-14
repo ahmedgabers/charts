@@ -1,0 +1,50 @@
+apiVersion: v1
+entries:
+  guestbook:
+  - apiVersion: v2
+    appVersion: v4
+    created: "2021-12-14T10:22:26.71141462Z"
+    dependencies:
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.5.x
+    description: A Helm chart for Kubernetes
+    digest: 297314f9a1d4a7e5cfaf88191ca9293bf1cd98156bfead67f5b3590f6fc7b694
+    name: guestbook
+    type: application
+    urls:
+    - guestbook-1.0.0.tgz
+    version: 1.0.0
+  minio:
+  - apiVersion: v1
+    appVersion: master
+    created: "2021-12-14T10:22:26.712554576Z"
+    description: High Performance, Kubernetes Native Object Storage
+    digest: 27223458c38b25f55d9c47f6bdf66959a16289db062310a211a25617328251ea
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - minio-8.0.0.tgz
+    version: 8.0.0
+  nginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-14T10:22:26.712903152Z"
+    description: A Helm chart for Kubernetes
+    digest: d62aaae24a4937d1c6bb49fd384e0623d67ae60829414a7d7e1931db4d45c8ee
+    name: nginx
+    type: application
+    urls:
+    - nginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-12-14T10:22:26.708149736Z"

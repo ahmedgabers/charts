@@ -1,0 +1,7 @@
+guestbook:
+  replicaCount: 1
+
+  service:
+    type: NodePort
+    nodePort: 32010
+    port: 80
