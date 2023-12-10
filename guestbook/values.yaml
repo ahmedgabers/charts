@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/google-samples/gb-frontend
+  repository: ahmedgabercod/gb-frontend
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
