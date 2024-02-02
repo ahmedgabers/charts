@@ -3,7 +3,21 @@ entries:
   guestbook:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-02-02T09:16:37.52647548Z"
+    created: "2024-02-02T09:56:43.803579662Z"
+    dependencies:
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.5.x
+    description: A Helm chart for Kubernetes
+    digest: 6f5f42251e8ac39a4049c622d92792ef90a1ee5b735822875edb20a067ef9737
+    name: guestbook
+    type: application
+    urls:
+    - guestbook-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: latest
+    created: "2024-02-02T09:56:43.801545728Z"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -18,7 +32,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: master
-    created: "2024-02-02T09:16:37.527594058Z"
+    created: "2024-02-02T09:56:43.804531486Z"
     description: High Performance, Kubernetes Native Object Storage
     digest: 27223458c38b25f55d9c47f6bdf66959a16289db062310a211a25617328251ea
     home: https://min.io
@@ -39,7 +53,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-02T09:16:37.527988011Z"
+    created: "2024-02-02T09:56:43.804845698Z"
     description: A Helm chart for Kubernetes
     digest: d62aaae24a4937d1c6bb49fd384e0623d67ae60829414a7d7e1931db4d45c8ee
     name: nginx
@@ -50,7 +64,7 @@ entries:
   onlineboutique:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2024-02-02T09:16:37.529863115Z"
+    created: "2024-02-02T09:56:43.805874858Z"
     description: A Helm chart for Kubernetes for Online Boutique
     digest: fd687257abd46e742596dfa39fbd29a6ae9c2fd21acac885ae2485b6513f1953
     name: onlineboutique
@@ -58,4 +72,4 @@ entries:
     urls:
     - onlineboutique-0.9.0.tgz
     version: 0.9.0
-generated: "2024-02-02T09:16:37.52426343Z"
+generated: "2024-02-02T09:56:43.798678194Z"
