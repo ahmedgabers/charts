@@ -1,9 +1,18 @@
 apiVersion: v1
 entries:
+  bundle-observability:
+  - apiVersion: v1
+    created: "2024-06-12T03:25:05.730240167+03:00"
+    description: Nexus Observability demo chart.
+    digest: 056b16c00f8ad72da930a5287e873081255b8020e769358443702b53f761b61e
+    name: bundle-observability
+    urls:
+    - https://ahmedgabers.github.io/charts/bundle-observability-2.0.0.tgz
+    version: 2.0.0
   guestbook:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-02-02T09:56:43.803579662Z"
+    created: "2024-06-12T03:25:05.734772472+03:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -13,11 +22,11 @@ entries:
     name: guestbook
     type: application
     urls:
-    - guestbook-1.1.0.tgz
+    - https://ahmedgabers.github.io/charts/guestbook-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
     appVersion: latest
-    created: "2024-02-02T09:56:43.801545728Z"
+    created: "2024-06-12T03:25:05.732326541+03:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -27,12 +36,12 @@ entries:
     name: guestbook
     type: application
     urls:
-    - guestbook-1.0.0.tgz
+    - https://ahmedgabers.github.io/charts/guestbook-1.0.0.tgz
     version: 1.0.0
   minio:
   - apiVersion: v1
     appVersion: master
-    created: "2024-02-02T09:56:43.804531486Z"
+    created: "2024-06-12T03:25:05.735734656+03:00"
     description: High Performance, Kubernetes Native Object Storage
     digest: 27223458c38b25f55d9c47f6bdf66959a16289db062310a211a25617328251ea
     home: https://min.io
@@ -48,28 +57,28 @@ entries:
     sources:
     - https://github.com/minio/minio
     urls:
-    - minio-8.0.0.tgz
+    - https://ahmedgabers.github.io/charts/minio-8.0.0.tgz
     version: 8.0.0
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-02T09:56:43.804845698Z"
+    created: "2024-06-12T03:25:05.736055451+03:00"
     description: A Helm chart for Kubernetes
     digest: d62aaae24a4937d1c6bb49fd384e0623d67ae60829414a7d7e1931db4d45c8ee
     name: nginx
     type: application
     urls:
-    - nginx-0.1.0.tgz
+    - https://ahmedgabers.github.io/charts/nginx-0.1.0.tgz
     version: 0.1.0
   onlineboutique:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2024-02-02T09:56:43.805874858Z"
+    created: "2024-06-12T03:25:05.736926684+03:00"
     description: A Helm chart for Kubernetes for Online Boutique
     digest: fd687257abd46e742596dfa39fbd29a6ae9c2fd21acac885ae2485b6513f1953
     name: onlineboutique
     type: application
     urls:
-    - onlineboutique-0.9.0.tgz
+    - https://ahmedgabers.github.io/charts/onlineboutique-0.9.0.tgz
     version: 0.9.0
-generated: "2024-02-02T09:56:43.798678194Z"
+generated: "2024-06-12T03:25:05.729842998+03:00"

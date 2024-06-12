@@ -1,0 +1,76 @@
+clusterName: prd-cpl-euno-01
+
+applications:
+  filebeat:
+    namespace: "argocd"
+    project: "default"
+    additionalAnnotations: {}
+    additionalLabels: {}
+    finalizers: []
+    source:
+      repoURL: "https://helm.elastic.co"
+      chart: "filebeat"
+      targetRevision: "HEAD"
+      helm:
+        releaseName: "filebeat"
+    destination:
+      namespace: "logging"
+      server: "https://kubernetes.default.svc"
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
+        allowEmpty: true
+      retry:
+        limit: 10
+        backoff:
+          duration: "5s"
+          factor: 2
+          maxDuration: "5m"
+      syncOptions:
+        - "PrunePropagationPolicy=foreground"
+        - "CreateNamespace=true"
+    ignoreDifferences:
+      - group: "admissionregistration.k8s.io"
+        kind: "ValidatingWebhookConfiguration"
+        jsonPointers:
+          - "/webhooks"
+    info: []
+    revisionHistoryLimit: 3
+
+  prometheus:
+    namespace: "argocd"
+    project: "default"
+    additionalAnnotations: {}
+    additionalLabels: {}
+    finalizers: []
+    source:
+      repoURL: "https://prometheus-community.github.io/helm-charts"
+      chart: "kube-prometheus-stack"
+      targetRevision: "HEAD"
+      helm:
+        releaseName: "kube-prometheus-stack"
+    destination:
+      namespace: "monitoring"
+      server: "https://kubernetes.default.svc"
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
+        allowEmpty: true
+      retry:
+        limit: 10
+        backoff:
+          duration: "5s"
+          factor: 2
+          maxDuration: "5m"
+      syncOptions:
+        - "PrunePropagationPolicy=foreground"
+        - "CreateNamespace=true"
+    ignoreDifferences:
+      - group: "admissionregistration.k8s.io"
+        kind: "ValidatingWebhookConfiguration"
+        jsonPointers:
+          - "/webhooks"
+    info: []
+    revisionHistoryLimit: 3
