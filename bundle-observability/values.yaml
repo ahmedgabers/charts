@@ -1,4 +1,4 @@
-clusterName: prd-cpl-euno-01
+clusterName: ""
 
 applications:
   filebeat:
@@ -7,12 +7,16 @@ applications:
     additionalAnnotations: {}
     additionalLabels: {}
     finalizers: []
-    source:
-      repoURL: "https://helm.elastic.co"
-      chart: "filebeat"
-      targetRevision: "HEAD"
+    sources:
+    - repoURL: 'https://helm.elastic.co'
+      chart: filebeat
+      targetRevision: HEAD
       helm:
         releaseName: "filebeat"
+        valueFiles: []
+    - repoURL: ''
+      targetRevision: ""
+      ref: ""
     destination:
       namespace: "logging"
       server: "https://kubernetes.default.svc"
@@ -44,12 +48,16 @@ applications:
     additionalAnnotations: {}
     additionalLabels: {}
     finalizers: []
-    source:
-      repoURL: "https://prometheus-community.github.io/helm-charts"
-      chart: "kube-prometheus-stack"
-      targetRevision: "HEAD"
+    sources:
+    - repoURL: 'https://prometheus-community.github.io/helm-charts'
+      chart: kube-prometheus-stack
+      targetRevision: HEAD
       helm:
         releaseName: "kube-prometheus-stack"
+        valueFiles: []
+    - repoURL: ''
+      targetRevision: ""
+      ref: ""
     destination:
       namespace: "monitoring"
       server: "https://kubernetes.default.svc"

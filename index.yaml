@@ -2,7 +2,15 @@ apiVersion: v1
 entries:
   bundle-observability:
   - apiVersion: v1
-    created: "2024-06-12T03:27:43.847447276+03:00"
+    created: "2024-06-12T05:07:38.874002113+03:00"
+    description: Nexus Observability demo chart.
+    digest: b5f25d12a506ccc4db2cae540b8040b00b431392193ea07aff7e229672830a3c
+    name: bundle-observability
+    urls:
+    - https://charts.ikubernetes.com/bundle-observability-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v1
+    created: "2024-06-12T05:07:38.873687651+03:00"
     description: Nexus Observability demo chart.
     digest: 056b16c00f8ad72da930a5287e873081255b8020e769358443702b53f761b61e
     name: bundle-observability
@@ -12,7 +20,7 @@ entries:
   guestbook:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-06-12T03:27:43.852357854+03:00"
+    created: "2024-06-12T05:07:38.878730647+03:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -26,7 +34,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: latest
-    created: "2024-06-12T03:27:43.84987343+03:00"
+    created: "2024-06-12T05:07:38.876788456+03:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -41,7 +49,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: master
-    created: "2024-06-12T03:27:43.853362658+03:00"
+    created: "2024-06-12T05:07:38.879678073+03:00"
     description: High Performance, Kubernetes Native Object Storage
     digest: 27223458c38b25f55d9c47f6bdf66959a16289db062310a211a25617328251ea
     home: https://min.io
@@ -62,7 +70,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-12T03:27:43.85372418+03:00"
+    created: "2024-06-12T05:07:38.879985553+03:00"
     description: A Helm chart for Kubernetes
     digest: d62aaae24a4937d1c6bb49fd384e0623d67ae60829414a7d7e1931db4d45c8ee
     name: nginx
@@ -73,7 +81,7 @@ entries:
   onlineboutique:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2024-06-12T03:27:43.854670494+03:00"
+    created: "2024-06-12T05:07:38.880876803+03:00"
     description: A Helm chart for Kubernetes for Online Boutique
     digest: fd687257abd46e742596dfa39fbd29a6ae9c2fd21acac885ae2485b6513f1953
     name: onlineboutique
@@ -81,4 +89,4 @@ entries:
     urls:
     - https://charts.ikubernetes.com/onlineboutique-0.9.0.tgz
     version: 0.9.0
-generated: "2024-06-12T03:27:43.847005844+03:00"
+generated: "2024-06-12T05:07:38.873292626+03:00"
